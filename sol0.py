@@ -1,6 +1,6 @@
 import sys
 from struct import pack
-from shellcode import shellcode
+# from shellcode import shellcode
 
 # Implement your attack here!
 name = b'u0578264' + b'A' * 6  # pad the name with A's to fill the buffer
